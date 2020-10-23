@@ -1,0 +1,60 @@
+* {
+  margin:0;
+  padding: 0;
+}
+.header {
+  background-color: rgb(183, 110, 121);
+  height: 20rem;
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+  h1 {
+
+    display:flex;
+    justify-content:center;
+    color: white;
+  }
+  #yoga-chakra {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+  }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  background-color: pink;;
+}
+nav {
+  height: 10vh;
+  background:rgb(179, 83, 137);
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin-left: auto;
+
+}
+li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  display:flex;
+}
+li a:hover {
+  text-decoration: none;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  padding: 6px 0;
+  color:rgb(23, 84, 99);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
