@@ -16,6 +16,13 @@
     justify-content:center;
     color: white;
   }
+  
+
+.footer {
+  background-color:  rgb(183, 110, 121);
+  width:100%;
+  height: 20rem;
+}
   #yoga-chakra {
     height: 8rem;
     width: 8rem;
@@ -40,7 +47,7 @@ nav {
   margin-left: auto;
 
 }
-li a {
+ .navlinks li a {
   color: white;
   text-decoration: none;
   font-size: 1.3rem;
@@ -58,3 +65,68 @@ li a:hover {
   grid-template-columns: 1fr;
 
 }
+.content {
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+}
+.sidebar {
+  display:flex;
+  flex-direction: column;
+  
+  background-color: rgb(197, 196, 196);
+}
+.main {
+ 
+  width: 100%;
+  background-color: rgb(197, 196, 196);
+
+}
+.card-container {
+  display: flex;
+  width:100%;
+  background-color: rgba(115, 123, 190, 0.95);
+
+}
+.city {
+  width: 30%;
+  margin: 0.5em auto;
+  background-color: rgb(183, 110, 121);
+  border: 2px solid rgb(173, 223, 169);
+
+}
+.city-image,
+.description {
+  width: 90%;
+  margin: 0 auto;
+}
+.city-image {
+  padding: 1.2em 1em;
+}
+
+.description {
+  padding: 1em 2em;
+}
+
+.city-image img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.description h2 {
+  padding-bottom: 0.5em;
+}
+.footer-text {
+  color: white;
+  text-shadow: 0.2rem 0.2rem rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 18rem;
+
+ }
