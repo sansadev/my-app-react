@@ -72,8 +72,20 @@ li a:hover {
 .sidebar {
   display:flex;
   flex-direction: column;
-  
   background-color: rgb(197, 196, 196);
+}
+.sidebar h2 {
+  color: rgb(23, 84, 99);
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  text-transform:uppercase;
+}
+.sidebar  p{
+  padding:2rem;
+  line-height: 1.5rem;
+  word-spacing: 0.5rem;
+
 }
 .main {
  
