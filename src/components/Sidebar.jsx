@@ -4,7 +4,7 @@ import React from 'react';
 function Sidebar() {
     return(
         
-        <div>
+        <div className="sidebar">
           <h2>Yoga Basics</h2>
           <p>
             Yoga is a vast collection of spiritual techniques and practices aimed at integrating mind, body and spirit to achieve a state of enlightenment or oneness

@@ -47,7 +47,7 @@ nav {
   margin-left: auto;
 
 }
- .navlinks li a {
+ .links  a {
   color: white;
   text-decoration: none;
   font-size: 1.3rem;
@@ -72,8 +72,21 @@ li a:hover {
 .sidebar {
   display:flex;
   flex-direction: column;
-  
   background-color: rgb(197, 196, 196);
+  
+}
+.sidebar h2 {
+  color: $sidebar-heading;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  text-transform:uppercase;
+}
+.sidebar p{
+  padding:2rem;
+  line-height: 1.5rem;
+  word-spacing: 0.5rem;
+
 }
 .main {
  
