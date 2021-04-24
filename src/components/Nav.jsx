@@ -4,20 +4,20 @@ import { Link } from 'react-router-dom';
 class Nav extends React.Component {
     render() {
         return(
-            <div class="nav-bar navbar-expand">
+            <div class="navbar-expand{-sm|-md|-lg|-xl}">
                <nav>
                   <ul class="nav-links">
                     <Link to="/">
-                     <li class="link"><a href="#">Home</a></li>
+                     <li class="link"><a>Home</a></li>
                     </Link> 
                      <Link to="/about">
-                     <li class="link"><a href="#">About Us</a></li>
+                     <li class="link"><a>About Us</a></li>
                      </Link>
                      <Link to="/yoga">
-                     <li class="link"><a href="#">Yoga</a></li>
+                     <li class="link"><a>Yoga</a></li>
                      </Link>
                      <Link to="/pranayama">
-                     <li class="link"><a href="#">Pranayama</a></li> 
+                     <li class="link"><a>Pranayama</a></li> 
                      </Link>
                      
                      

@@ -47,13 +47,13 @@ nav {
   margin-left: auto;
 
 }
- .links  a {
+ .link  a {
   color: white;
   text-decoration: none;
   font-size: 1.3rem;
   display:flex;
 }
-li a:hover {
+.link a:hover {
   text-decoration: none;
   border-top: 4px solid white;
   border-bottom: 4px solid white;
@@ -92,7 +92,7 @@ li a:hover {
   color: rgb(23, 84, 99);
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
   text-transform:uppercase;
 }
 .sidebar  p{
@@ -109,6 +109,8 @@ li a:hover {
 }
 .card-container {
   display: flex;
+  margin-top: 3rem;
+  margin-bottom:1rem;
   width:100%;
   background-color: rgba(115, 123, 190, 0.95);
 
@@ -155,4 +157,60 @@ a {
   align-items: center;
   height: 18rem;
 
+ }
+ /*Accordion styling*/
+ .container {
+   width: 100%;
+   max-width: 30rem;
+   margin:auto;
+ }
+ .accordion {
+   width: 100%;
+   max-width: 33rem;
+   margin: 1.1rem auto;
+   color:whitesmoke;
+ }
+ .accordionHeading {
+   background:rgb(55, 55, 134);
+   padding: 0.5rem 0;
+   border: 2px solid tomato;
+   margin: 1rem;
+ }
+
+ .accordionHeading .container{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+
+ .accordionHeading p {
+   letter-spacing: 0.075rem;
+   font-weight: 600 ;
+ }
+ .accordionHeading span {
+   cursor: pointer;
+
+ }
+
+ .accordionContent {
+   background:rgb(125, 168, 125);
+   height: 0;
+   opacity: 0;
+   display: flex;
+   overflow: hidden;
+   transition: all 600ms ease-in-out;
+ }
+ .accordionContent .show {
+   height: 180px;
+   opacity: 1;
+   
+ }
+
+
+
+ .accordionContent p {
+    font-size: 1rem;
+    line-height: 1.6;
+   
  }
