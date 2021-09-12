@@ -6,7 +6,7 @@ import Accordion from './Accordion';
 
 
 function Yoga() {
-    const [active, setActive] = useState("Title1");
+    
     return(
     <div>
     <div className="grid-container">
@@ -19,9 +19,8 @@ function Yoga() {
     <p>Deepen your understanding of yoga by exploring the philosophical aspects of this ancient practice. Learn about the history of yoga, get an overview of the major yogic texts,
     and learn more about the chakras, the body’s energy centers and their relationship to health and wellness. We’ve also included a section on using asanas to treat common ailments
     and conditions as well as a compressive list of our articles on yoga.</p>
-   <Accordion  title="Title1" active={active} setActive = {setActive} />
-    <Accordion title="Title2" active={active} setActive = {setActive} />
-    <Accordion title="Title3" active={active} setActive = {setActive} />
+   <Accordion />
+   
         </div>
     </main>
     </div>

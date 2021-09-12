@@ -1,31 +1,47 @@
 
+import { render } from '@testing-library/react';
 import React from 'react';
+import { NavItem } from 'react-bootstrap';
+import {Data} from './Data';  
 
 
-
-
-const Accordion = ({ title, active, setActive }) => {
-    return(
-        <div className="container">
-            
-        <div className= "accordion">
-            <div className="accordionHeading">
-                <div className="container">
-                    <p>{title}</p>
-                    <span onClick={() => setActive("title")}>
-                        {active === title ? "X" : "|||"}
-                    </span>
-                </div>
+const Accordion = () => {
+    const accordionData = {
+      title: 'Section 1',
+      content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
+        laborum cupiditate possimus labore, hic temporibus velit dicta earum
+        suscipit commodi eum enim atque at? Et perspiciatis dolore iure
+        voluptatem.`
+    };
+  
+    const { title, content } = accordionData;
+  
+    return (
+      <React.Fragment>
+        <h1>React Accordion Demo</h1>
+        <div className="accordion">
+          <div className="accordion-item">
+            <div className="accordion-title">
+              <div>{title}</div>
+              <div>+</div>
             </div>
-            <div className= {(active === title ? "show" : "") + "accordionContent"}>
-                <div className="container">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquid quam deserunt ad vero eos explicabo id quis ratione voluptates, illo accusantium possimus fugiat, excepturi, magnam non natus cumque pariatur!
-                    Iure soluta eligendi architecto, expedita adipisci delectus sed laboriosam id aut, rem minus dicta vitae distinctio ullam excepturi, beatae minima numquam esse tenetur possimus illum? Sint nisi dolore quod perspiciatis!
-                    Dignissimos id quos labore fuga sint blanditiis nemo nesciunt rerum magnam ipsa perspiciatis esse aspernatur minima iusto officia tempore excepturi cumque itaque ullam, mollitia optio non dolore. Fugit, in odio.</p>
-                </div>
-            </div>
+            <div className="accordion-content">{content}</div>
+          </div>
         </div>
-    </div>
-    )
-}
-export default Accordion;
+      </React.Fragment>
+    );
+  };
+  
+  export default Accordion;
+
+
+
+
+
+
+// function Accordion() {
+//     return(
+//         <div>looo</div>
+//     )
+// } 
+// export default Accordion;

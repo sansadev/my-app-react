@@ -159,58 +159,19 @@ a {
 
  }
  /*Accordion styling*/
- .container {
-   width: 100%;
-   max-width: 30rem;
-   margin:auto;
- }
  .accordion {
-   width: 100%;
-   max-width: 33rem;
-   margin: 1.1rem auto;
-   color:whitesmoke;
+   border: 2px solid red;
  }
- .accordionHeading {
-   background:rgb(55, 55, 134);
-   padding: 0.5rem 0;
-   border: 2px solid tomato;
-   margin: 1rem;
- }
-
- .accordionHeading .container{
-   display:flex;
-   align-items: center;
-   justify-content: space-between;
- }
-
-
- .accordionHeading p {
-   letter-spacing: 0.075rem;
-   font-weight: 600 ;
- }
- .accordionHeading span {
-   cursor: pointer;
-
- }
-
- .accordionContent {
-   background:rgb(125, 168, 125);
-   height: 0;
-   opacity: 0;
+ .accordion-title {
+   background-color: aquamarine;
    display: flex;
-   overflow: hidden;
-   transition: all 600ms ease-in-out;
+   justify-content: space-between;
+   height: 4vh;
+   padding-left: 2vh;
+   padding-top: 0.7vh;
+   padding-right: 4vh;
  }
- .accordionContent .show {
-   height: 180px;
-   opacity: 1;
-   
- }
-
-
-
- .accordionContent p {
-    font-size: 1rem;
-    line-height: 1.6;
+ .accordion-content {
+   background-color: rgb(224, 162, 193);
    
  }
